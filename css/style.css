@@ -33,18 +33,20 @@ body {
 /* Estilos específicos del footer */
 .footer {
     background-color: #0A2E36;
-    padding: 10px; /* Ajusta el espacio interno según sea necesario */
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
   /* Estilos para los enlaces de redes sociales */
   .social-icon {
-    
-    margin-right: 50px; /* Espaciado entre los íconos de redes sociales */
-    text-decoration: none; /* Elimina la decoración de texto predeterminada en los enlaces */
-    font-size: 2em; /* Cambia el tamaño de los íconos */
-    color: #F0F3BD; /* Cambia el color de los íconos  */
-}
-
+    margin-right: 20px; 
+    text-decoration: none; 
+    font-size: 1.5em; 
+    color: #F0F3BD; 
+  
+  }
 /* Ajusta el color de los íconos al pasar el mouse sobre ellos */
 .social-icon:hover i {
   color: #0056b3; 
