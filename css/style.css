@@ -1,0 +1,53 @@
+
+/* Establece la fuente, color de fondo y color de texto para todo el cuerpo de la página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0A2E36;
+    color: #F0F3BD;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    } /*bajar el footer*/
+    main {
+        flex-grow: 1;
+    }
+  
+  /* Estilos para la barra de navegación (navbar) */
+  .navbar {
+    background-color: #0A2E36; 
+  }
+  /* Estilos para el texto en la barra de navegación */
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #F0F3BD;
+  }
+  /* Estilos para el botón de alternancia en la barra de navegación */
+  .navbar-toggler-icon {
+    background-color: #0A2E36;
+  }
+  /* Estilos para enlaces en la barra de navegación cuando se pasan sobre ellos */
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .active {
+    color: #F0F3BD;
+}
+/* Estilos específicos del footer */
+.footer {
+    background-color: #0A2E36;
+    padding: 10px; /* Ajusta el espacio interno según sea necesario */
+  }
+  
+  /* Estilos para los enlaces de redes sociales */
+  .social-icon {
+    
+    margin-right: 50px; /* Espaciado entre los íconos de redes sociales */
+    text-decoration: none; /* Elimina la decoración de texto predeterminada en los enlaces */
+    font-size: 2em; /* Cambia el tamaño de los íconos */
+    color: #F0F3BD; /* Cambia el color de los íconos  */
+}
+
+/* Ajusta el color de los íconos al pasar el mouse sobre ellos */
+.social-icon:hover i {
+  color: #0056b3; 
+}
+
+
