@@ -7,63 +7,67 @@
 
 
 /* From uiverse.io by @Ali-Tahmazi99 */
-button {
-    display: inline-block;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    border: 1px solid #03045e;
+.botonAgregar {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136); 
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease-in;
-    z-index: 1;
-   }
-   
-   button::before,
-   button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 100%;
-    transform: skew(15deg);
-    transition: all 0.5s;
-    overflow: hidden;
-    z-index: -1;
-   }
-   
-   button::before {
-    left: -10px;
-    background: #240046;
-   }
-   
-   button::after {
-    right: -10px;
-    background: #5a189a;
-   }
-   
-   button:hover::before,
-   button:hover::after {
-    width: 58%;
-   }
-   
-   button:hover span {
-    color: #e0aaff;
-    transition: 0.3s;
-   }
-   
-   button span {
-    color: #03045e;
-    font-size: 18px;
-    transition: all 0.3s ease-in;
-   }
+    transition: all 0.3s;
+}
 
+.botonAgregar::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.botonAgregar:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.botonAgregar:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
 
 
 
 /*Resto del códgio ---------------------------------------------------------------*/
 
-
+table{
+    background-color: #FFF;
+    background-image: url(../img/disneyLogoDefinitivo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
 
 
 body {
@@ -76,6 +80,22 @@ body {
     height: 100vh;
     /* background: radial-gradient(ellipse at bottom, #1B2735 0%, #12141d 100%); */
     background: radial-gradient(ellipse at bottom, #00a896 0%, #0A2E36 100%);
+    overflow: scroll;
+    height: 500vh;
+}
+
+
+
+.section1 {
+    border: red 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+}
+
+.section2 {
+    padding: 5%;
 
 }
 
