@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /*   position: relative; */
+}
+
+.movie-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-details {
+  color: white;
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  z-index: 2;
+}
+
+/* Estilo para sombreado */
+.movie-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
+.movie-details .movie-title {
+  position: relative;
+  top: -40px;
+}
+
+.movie-description {
+  margin-bottom: 20px;
+}
+
+.play-button {
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.play-button:hover {
+  background-color: #d10813;
+  cursor: pointer;
+}
