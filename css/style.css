@@ -1,7 +1,6 @@
-
-/* Establece la fuente, color de fondo y color de texto para todo el cuerpo de la página */
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 15px;
     background-color: #0A2E36;
     color: #F0F3BD;
     display: flex;
@@ -12,25 +11,29 @@ body {
         flex-grow: 1;
     }
   
-  /* Estilos para la barra de navegación (navbar) */
   .navbar {
     background-color: #0A2E36; 
   }
-  /* Estilos para el texto en la barra de navegación */
+ 
+  /* estilos para el texto en la barra de navegación */
   .navbar-brand,
   .navbar-nav .nav-link {
     color: #F0F3BD;
   }
-  /* Estilos para el botón de alternancia en la barra de navegación */
+  
   .navbar-toggler-icon {
     background-color: #0A2E36;
   }
-  /* Estilos para enlaces en la barra de navegación cuando se pasan sobre ellos */
+
   .navbar-nav .nav-link:hover,
   .navbar-nav .active {
     color: #F0F3BD;
 }
-/* Estilos específicos del footer */
+.navbar-brand img {
+  height: 120px;
+  max-height: 100%;
+}
+
 .footer {
     background-color: #0A2E36;
     width: 100vw;
@@ -38,8 +41,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+   
+    
   }
-  /* Estilos para los enlaces de redes sociales */
+  /* estilos para los enlaces de redes sociales */
   .social-icon {
     margin-right: 20px; 
     text-decoration: none; 
@@ -47,7 +52,7 @@ body {
     color: #F0F3BD; 
   
   }
-/* Ajusta el color de los íconos al pasar el mouse sobre ellos */
+
 .social-icon:hover i {
   color: #0056b3; 
 }
