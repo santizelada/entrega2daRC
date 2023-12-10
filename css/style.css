@@ -11,7 +11,7 @@ flex-wrap: wrap;
 align-items: center;
 justify-content:center;
 min-height: 100vh;
-background:teal
+background:rgb(10, 90, 90)
 }
 
 .card{
@@ -41,7 +41,7 @@ margin: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background: rgb(236, 210, 160);
+    background:navajowhite;
 }
 
 .card .front h3{
