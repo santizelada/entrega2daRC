@@ -30,6 +30,7 @@ body{
 
 .carousel-caption {
     text-align: left;
+    
 }
 
 
@@ -64,19 +65,55 @@ body{
 .card {
     cursor: pointer;
 }
+.CardsPelisAccion{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    
+}
+.CardsPelisComedia{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.CardsPelisAccion{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.h3{
+    font-size: 18px !important;
+
+}
+
 
 
 @media (max-width: 480px) {
-    img{
-        width: 50%;
+    .CardsPelisAccion{
+        display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+ 
     }
- }
+    .CardsPelisComedia{
+        display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+    }
+   
+    .CardsPelisDestacadas{
+        display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+    }
+}
+
  
  @media (min-width: 768px) and (max-width: 1024px) {
-    .img{
-        width:33.3%;
-        height: 33.3%;
-        margin: 2px;
+
+    .carousel-caption {
+        text-align: left;
+        font-size: medium;
     }
  }
  
