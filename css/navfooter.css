@@ -1,5 +1,4 @@
 body {
-    margin-top: 25px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     background-color: #0A2E36;
@@ -7,7 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    } /*bajar el footer*/
+    } 
+/*bajar el footer*/
     main {
         flex-grow: 1;
         
@@ -52,6 +52,30 @@ body {
           box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
         }
       }
+    }
+  
+  .navbar {
+    background-color: #0A2E36; 
+  }
+ 
+  /* estilos para el texto en la barra de navegación */
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #F0F3BD;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #0A2E36;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .active {
+    color: #F0F3BD;
+}
+.navbar-brand img {
+  height: 120px;
+  max-height: 100%;
+}
 
 .footer {
     background-color: #0A2E36;
