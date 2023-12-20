@@ -1,4 +1,4 @@
-import { peliculas, peliculasComedia, peliculasAccion } from "./peliculas.js";
+import { peliculas, peliculasComedia, peliculasAccion,peliculasDestacadas } from "./peliculas.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const carrusel = document.querySelector(".carousel-inner");
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     descripcion.textContent = pelicula.descripcion;
 
     const link = document.createElement("a");
-    link.classList.add("btn", "btn-primary");
+    link.classList.add("btn", "btn-ver");
     link.href = `../html/detallePelicula.html?id=${pelicula.id}`;
     link.textContent = "Ver Película";
 
@@ -89,5 +89,28 @@ document.addEventListener("DOMContentLoaded", function () {
     card.appendChild(enlace);
     divPelicula.appendChild(card);
     contenedorAccion.appendChild(divPelicula);
+  });
+  const contenedorDestacadas = document.querySelector(
+    ".CardsPelisDestacadas .fila-destacada"
+  );
+  peliculasDestacadas.forEach((pelicula) => {
+    const divPelicula = document.createElement("div");
+    divPelicula.classList.add("col-md-2");
+
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    const enlace = document.createElement("a");
+    enlace.href = `../html/detallePelicula.html?id=${pelicula.id}`;
+
+    const imagen = document.createElement("img");
+    imagen.src = pelicula.imagen;
+    imagen.alt = pelicula.titulo;
+    imagen.classList.add("img-fluid");
+
+    enlace.appendChild(imagen);
+    card.appendChild(enlace);
+    divPelicula.appendChild(card);
+    contenedorDestacadas.appendChild(divPelicula);
   });
 });

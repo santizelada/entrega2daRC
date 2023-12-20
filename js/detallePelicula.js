@@ -3,6 +3,7 @@ import {
     peliculasSlider,
     peliculasAccion,
     peliculasComedia,
+    peliculasDestacadas
   } from "./peliculas.js";
   
   document.addEventListener("DOMContentLoaded", function () {
@@ -13,7 +14,8 @@ import {
       peliculas.find((movie) => movie.id === movieId) ||
       peliculasSlider.find((movie) => movie.id === movieId) ||
       peliculasAccion.find((movie) => movie.id === movieId) ||
-      peliculasComedia.find((movie) => movie.id === movieId);
+      peliculasComedia.find((movie) => movie.id === movieId)||
+      peliculasDestacadas.find((movie) => movie.id === movieId);
   
     if (selectedMovie) {
       document.getElementById("movieTitle").innerText = selectedMovie.titulo;

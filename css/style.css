@@ -61,7 +61,27 @@ body{
 .card:hover img {
     transform: scale(1.1);
 }
-
+.container-destacadas{
+    padding-left: 7%;
+}
+.btn-ver{
+    margin-left: 42%;
+    padding: 10px  30px ;
+    margin-bottom: 30px;
+    height: auto;
+    margin-right: 30px;
+    background-color: #00a896;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.btn-ver:hover {
+    background-color: #f0f3bd;
+    cursor: pointer;
+    color: black;
+  }
 
 .card {
     cursor: pointer;
@@ -82,8 +102,12 @@ body{
     justify-content: space-around;
     align-items: stretch;
 }
-.h3{
-    font-size: 18px !important;
+h3{
+    
+        color: #fff;
+        font-size: 30px;
+        padding-left: 2%;
+    
 
 }
 .carruselBanner,
