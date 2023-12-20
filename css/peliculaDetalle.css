@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0a2e36;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Modificar el tamaño de la imagen */
+.movie-image img {
+  width: 100%;
+  height: 600px; /* Modifica este valor según tu necesidad */
+  object-fit: contain;
+  display: block;
+  z-index: -1;
+}
+
+.movie-details {
+  color: white;
+  text-align: left;
+  position: relative;
+  top: 20%;
+  left: 1%;
+  z-index: 1;
+}
+
+/* Estilo para sombreado */
+.movie-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
+.movie-description {
+  margin-bottom: 20px;
+}
+
+.play-button {
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  height: auto;
+  margin-right: 30px;
+  background-color: #00a896;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.trailer-button {
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  height: auto;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.play-button:hover {
+  background-color: #0a2e36;
+  cursor: pointer;
+}
+.trailer-button:hover {
+  background-color: #f0f3bd;
+  cursor: pointer;
+  color: black;
+}
+.contenedor-descripcion {
+  margin-top: 180px;
+  border-bottom: 1px solid #ccc;
+}
+
+.movie-details .movie-subtitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.movie-details .row {
+  margin-top: 20px;
+}
+
+.movie-details .col {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .movie-details {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .movie-details {
+    position: relative;
+  }
+}
