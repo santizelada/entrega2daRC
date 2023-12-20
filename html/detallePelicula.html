@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle de Película/Serie</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/peliculaDetalle.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section class="carousel">
+        <div class="movie-image">
+          <img id="movieImage" class="d-block w-100" alt="imagen pelicula" />
+          <div class="movie-details p-4">
+            <h1 id="movieTitle" class="movie-title mb-5">
+              Nombre de la película o serie
+            </h1>
+            <button href="" class="play-button">Ver Ahora</button>
+            <button href="" class="trailer-button">Trailer</button>
+
+            <div class="col-lg-8">
+              <h3 class="mb-4 mt-2">Resumén</h3>
+              <p id="movieDescription" class="movie-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <h6>Duración:</h6>
+                <p id="duracion">1:40hs</p>
+                <h6>Género:</h6>
+                <p id="genero">dasd</p>
+                <h6>Clasificacion:</h6>
+                <p id="clasificacion">+14</p>
+              </div>
+              <div class="col-md-6">
+                <h6>Dirigida por:</h6>
+                <p id="director">RollingCode</p>
+                <h6>Fecha de estreno:</h6>
+                <p id="fechaEstreno">2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/detallePelicula.js" type="module"></script>
+  </body>
+</html>

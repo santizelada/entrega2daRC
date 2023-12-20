@@ -9,7 +9,6 @@ import {
     const params = new URLSearchParams(window.location.search);
     const movieId = params.get("id");
   
-    // Busca la película en los arrays peliculas y peliculasSlider
     const selectedMovie =
       peliculas.find((movie) => movie.id === movieId) ||
       peliculasSlider.find((movie) => movie.id === movieId) ||
