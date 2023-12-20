@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    } /*bajar el footer*/
+    } /bajar el footer/
     main {
         flex-grow: 1;
     }
@@ -54,7 +54,5 @@ body {
   }
 
 .social-icon:hover i {
-  color: #0056b3; 
+  color: #0056b3; 
 }
-
-
