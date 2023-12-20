@@ -1,4 +1,17 @@
-.navbar {
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: #0A2E36;
+    color: #F0F3BD;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    } /bajar el footer/
+    main {
+        flex-grow: 1;
+    }
+  
+  .navbar {
     background-color: #0A2E36; 
   }
  
@@ -19,4 +32,27 @@
 .navbar-brand img {
   height: 120px;
   max-height: 100%;
+}
+
+.footer {
+    background-color: #0A2E36;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+  /* estilos para los enlaces de redes sociales */
+  .social-icon {
+    margin-right: 20px; 
+    text-decoration: none; 
+    font-size: 1.5em; 
+    color: #F0F3BD; 
+  
+  }
+
+.social-icon:hover i {
+  color: #0056b3; 
 }
