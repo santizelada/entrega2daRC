@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #0A2E36; 
+  }
+ 
+  /* estilos para el texto en la barra de navegación */
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #F0F3BD;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #0A2E36;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .active {
+    color: #F0F3BD;
+}
+.navbar-brand img {
+  height: 120px;
+  max-height: 100%;
+}

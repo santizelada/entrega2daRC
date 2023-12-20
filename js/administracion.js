@@ -1,4 +1,12 @@
 import {peliculas,peliculasSlider,peliculasAccion,peliculasComedia} from './peliculas.js';
+const tabla = document.querySelector(".table-group-divider");
+
+tabla.addEventListener("click", (event) => {
+  if (event.target.classList.contains("bi-trash3")) {
+    const fila = event.target.closest("tr");
+    fila.remove();
+  }
+});
 
 function agregarPeliculasALaTabla(peliculas) {
   const tbody = document.querySelector(".table-group-divider");
@@ -21,25 +29,27 @@ function agregarPeliculasALaTabla(peliculas) {
     tbody.appendChild(row);
   });
 }
-const tabla = document.querySelector(".table-group-divider");
 
 tabla.addEventListener("click", (event) => {
   if (event.target.classList.contains("bi-trash3")) {
     const fila = event.target.closest("tr");
-    const id = fila.querySelector("th").textContent;
+    const id = fila.querySelector("th").innerText;
     eliminarFilaPorId(id);
     fila.remove();
   }
 });
 
 function eliminarFilaPorId(id) {
-  const filas = document.querySelectorAll(".table-group-divider tr");
-  filas.forEach((fila) => {
-    const filaId = fila.querySelector("th").textContent;
-    if (filaId === id) {
-      fila.remove();
-    }
-  });
+    const filas = document.querySelectorAll(".table-group-divider tr");
+    filas.forEach((fila) => {
+        const thElement = fila.querySelector("th");
+        if (thElement !== null) {
+            const filaId = thElement.textContent;
+            if (filaId === id) {
+                fila.remove();
+            }
+        }
+    });
 }
 
 
@@ -50,3 +60,4 @@ window.addEventListener("load", () => {
   agregarPeliculasALaTabla(peliculasComedia);
 
 });
+
